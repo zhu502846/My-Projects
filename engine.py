@@ -1,6 +1,9 @@
 import pygame
 from pygame.locals import *
 import os
+# from characters import *
+
+
 # Game Initialization
 pygame.init()
 pygame.display.set_caption("Game")
@@ -35,7 +38,7 @@ tile = pygame.transform.scale(tile, (80, 80)).convert_alpha()
 
 # Static Locations
 tile_locations = {
-	'A1': (270, 340),
+	'A1': (0, 0),
 	'A2': (0, 0),
 	'A3': (0, 0),
 	'A4': (0, 0),
@@ -57,6 +60,8 @@ tile_locations = {
 	'C6': (0, 0),
 	'C7': (0, 0),
 }
+# Get characters
+# characters_lst = characters.get_characters()
 
 
 # Game Framerate
@@ -76,8 +81,7 @@ def main_menu():
 		pygame.display.update()
 		clock.tick(FPS)
 
-def begin_game():
-	return None
+def find_path()
 
 # Main Game Loop
 crashed = False
